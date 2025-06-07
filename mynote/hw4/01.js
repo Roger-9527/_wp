@@ -10,7 +10,3 @@ function countLetters(str) {
   }
 return map;
 }
-let result = countLetters("Hello, World!");
-for (let [char, count] of result) {
-  console.log(`${char}: ${count}`);
-}
