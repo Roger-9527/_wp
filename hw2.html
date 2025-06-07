@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊表單</title>
+    <style>
+        body {
+            font-family: "微軟正黑體", sans-serif;
+            background-color: #f2f2f2;
+            padding: 40px;
+        }
+        .form-container {
+            background-color: #fff;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005ea6;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>註冊表單</h2>
+        <form action="#" method="post">
+            <label for="fullname">name</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">密碼</label>
+            <input type="password" id="password" name="password" required>
+            <label for="gender">性別</label>
+            <select id="gender" name="gender" required>
+                <option value="">請選擇</option>
+                <option value="male">man</option>
+                <option value="female">woman</option>
+                <option value="other">其他</option>
+            </select>
+            <label for="birthday">生日</label>
+            <input type="date" id="birthday" name="birthday">
+            <button type="submit">註冊</button>
+        </form>
+    </div>
+</body>
+</html>
