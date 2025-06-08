@@ -1,8 +1,8 @@
-def most_common(nums):
-    if not nums:
-        return None 
-    counts = {}
-    for num in nums:
-        counts[num] = counts.get(num, 0) + 1
-    max_num = max(counts, key=counts.get)
+def most_common(m):
+    if not m:
+        return None
+    n = {}
+    for num in m:
+        n[num] = n.get(num, 0) + 1
+    max_num = max(n, key=n.get)
     return max_num
